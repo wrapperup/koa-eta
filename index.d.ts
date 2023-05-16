@@ -37,6 +37,6 @@ declare module 'koa' {
  * });
  * ```
  */
-declare function koaEta(app: Koa, config?: Partial<EtaConfig>): void;
+declare function koaEta<StateT, ContextT>(app: Koa<StateT, ContextT>, config?: Partial<EtaConfig>): void;
 
 export = koaEta;
