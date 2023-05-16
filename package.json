@@ -1,0 +1,39 @@
+{
+  "name": "koa-eta",
+  "author": "wrapperup",
+  "version": "0.1.0",
+  "description": "eta template rendering for Koa",
+  "license": "MIT",
+  "main": "src/index.js",
+  "types": "index.d.ts",
+  "bugs": {
+    "url": "https://github.com/wrapperup/koa-eta/issues"
+  },
+  "homepage": "https://github.com/wrapperup/koa-eta",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrapperup/koa-eta.git"
+  },
+  "keywords": [
+    "koa",
+    "eta",
+    "template-engine",
+    "middleware",
+    "render",
+    "view"
+  ],
+  "dependencies": {
+    "eta": "^2.1.2"
+  },
+  "devDependencies": {
+    "koa": "^2.14.2"
+  },
+  "peerDependencies": {
+    "@types/koa": "^2.13.6"
+  },
+  "peerDependenciesMeta": {
+    "@types/koa": {
+      "optional": true
+    }
+  }
+}
