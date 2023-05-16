@@ -37,5 +37,10 @@ declare module 'koa' {
  * });
  * ```
  */
-declare function koaEta<StateT = Koa.DefaultState, ContextT = Koa.DefaultContext>(app: Koa<StateT, ContextT>, config?: Partial<Eta.EtaConfig>): typeof Eta;
+declare function koaEta<StateT = Koa.DefaultState, ContextT = Koa.DefaultContext>(app: Koa<StateT, ContextT>, config?: Partial<Eta.EtaConfig>): void;
+
+declare namespace koaEta {
+  const eta: typeof Eta;
+}
+
 export = koaEta;

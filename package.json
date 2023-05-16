@@ -1,7 +1,7 @@
 {
   "name": "koa-eta",
   "author": "wrapperup",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "eta template rendering for Koa",
   "license": "MIT",
   "main": "src/index.js",
