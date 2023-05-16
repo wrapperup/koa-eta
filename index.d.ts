@@ -1,4 +1,4 @@
-import type { EtaConfig } from 'eta';
+import * as Eta from 'eta';
 import * as Koa from "koa";
 
 declare module 'koa' {
@@ -37,6 +37,5 @@ declare module 'koa' {
  * });
  * ```
  */
-declare function koaEta<StateT, ContextT>(app: Koa<StateT, ContextT>, config?: Partial<EtaConfig>): void;
-
+declare function koaEta<StateT = Koa.DefaultState, ContextT = Koa.DefaultContext>(app: Koa<StateT, ContextT>, config?: Partial<Eta.EtaConfig>): typeof Eta;
 export = koaEta;

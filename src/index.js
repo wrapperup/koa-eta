@@ -1,5 +1,4 @@
 const eta = require('eta');
-const path = require('path');
 
 function koaEta(app, config) {
   config = {
@@ -21,6 +20,8 @@ function koaEta(app, config) {
 
     return html
   }
+
+  return eta;
 }
 
 module.exports = koaEta;
